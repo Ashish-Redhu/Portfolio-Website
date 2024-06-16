@@ -55,3 +55,17 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+// Resume functionality.
+document.getElementById('view-resume-button').addEventListener('click', function() {
+    document.getElementById('resume-modal').style.display = 'block';
+});
+
+document.getElementById('close-modal-button').addEventListener('click', function() {
+    document.getElementById('resume-modal').style.display = 'none';
+});
+
+document.getElementById('download-pdf-button').addEventListener('click', function() {
+    window.location.href = 'assets/resume/AshishResume.pdf';
+});
